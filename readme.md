@@ -36,6 +36,31 @@ source .bashrc
 
 <details>
 <summary>Day 1 </summary>
+
+## Application to hardware flow
+  
+![Screenshot (12)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/3a2a9565-23f5-43f3-a6ec-e46495ed173c)
+
+![Screenshot (13)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/748498f6-9979-48ab-b857-93f51cf3b239)
+
+## Lab for software toolchain
+
+### compiling simple c program
+
+use below commands to compile and see the output of c program : sum of n natural numbers
+
+```
+gedit sum1ton.c
+gcc sum1ton.c
+./a.out
+
+```
+![sum1ton](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/163f3601-dc88-4561-ad04-3a96ef1d6cfa)
+
+![program o_p](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/d36e5451-5253-49e6-b900-f4bc078fd4a7)
+
+
+
 </details>
 
 <details>
