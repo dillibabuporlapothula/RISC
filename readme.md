@@ -88,6 +88,34 @@ spike -d pk sum1ton.o
 
 <details>
 <summary>Day 2 </summary>
+
+## Application binary interface(ABI) and verification flow
+
+![Screenshot (15)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/c0c69b5e-7337-4776-8c16-6ba5c84a39cb)
+
+```
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1to9_custom.o sum1to9_custom.c load.S
+riscv64-unknown-elf-objdump -d sum1to9_custom.o | less
+spike pk sum1to9_custom.o
+```
+![code](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/6eee55c0-d07f-4fff-9c58-bce35443f524)
+![execution](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/af914a45-9e47-4265-9944-ba7fb1d1f9c7)
+![machinecode](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/a1a290e9-86fc-44fa-8fa5-0c7f7e2ebb3e)
+
+### how to run C program on RISCV CPU
+
+![Screenshot (16)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/2afe9f33-1f5a-4195-b7bf-f328acdb43fa)
+![Screenshot (17)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/091c90c0-46d6-406c-ade5-eeb78262d319)
+
+```
+cd riscv_workshop_collaterals/labs/
+chmod 777 rv32im.sh
+./rv32im.sh 
+```
+![2  1](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/17570320-10eb-4198-8aa1-fd1e32179348)
+
+![2 2 - hex](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/60288216-042c-44df-9763-4c56007c7e38)
+
 </details>
 
 <details>
