@@ -74,6 +74,15 @@ By using -ofast
 
 ![ofast](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/6c1e373c-2e24-4e71-9627-2a4ca36b6d83)
 
+### spike simulation
+
+```
+spike -d pk sum1ton.o 
+```
+![spike](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/345bddb6-a8f4-4897-a566-3e5d088500ac)
+![Screenshot (14)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/709e741c-191b-4402-964c-ab3f6b8f5cf8)
+
+
 
 </details>
 
