@@ -59,6 +59,20 @@ gcc sum1ton.c
 
 ![program o_p](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/d36e5451-5253-49e6-b900-f4bc078fd4a7)
 
+### GCC compile and disassemble
+
+```
+riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton_ofast.o sum1ton.c
+riscv64-unknown-elf-objdump -d sum1ton_O1.o | less
+
+```
+
+![disassemble](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/9e7a00e6-6685-49fd-b78a-9523737ccbda)
+
+By using -ofast
+
+![ofast](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/6c1e373c-2e24-4e71-9627-2a4ca36b6d83)
 
 
 </details>
