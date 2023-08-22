@@ -119,7 +119,61 @@ chmod 777 rv32im.sh
 </details>
 
 <details>
-<summary>Day 3 </summary>
+<summary>Day 3 </summary> 
+
+  # Digital Logic with TL-Verilog and Makerchip
+
+  ## Combinational logic
+  
+  pythagorean on markerchip
+
+![Screenshot (18)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/a85e7f2e-ee05-483b-a2c2-29eca1bd17a4)
+
+  Inverter on markerchip 
+
+  ```
+   $out = $in;
+  ```
+![Screenshot (19)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/76ab1634-15e1-457c-bf3e-2a8e547401ad)
+
+
+  Two input AND gate
+
+  ```
+   $out = $in1 && $in2;
+  ```
+![Screenshot (20)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/89b291c5-8d66-4715-ab14-efb879f2b713)
+
+
+ vector addition
+
+ ```
+   $out[5:0] = $in1[4:0] + $in2[4:0];
+ ```
+ ![Screenshot (21)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/dcc45835-5d17-46d9-955a-97ca966b8586)
+
+
+  Calculator
+
+  ```
+   $reset = *reset;
+   $op[1:0] = $random[1:0];
+   
+   $val1[31:0] = $rand1[3:0];
+   $val2[31:0] = $rand2[3:0];
+   $sum[31:0] = $val1+$val2;
+   $diff[31:0] = $val1-$val2;
+   $prod[31:0] = $val1*$val2;
+   $div[31:0] = $val1/$val2;
+   
+   $out[31:0] = $op[1] ? ($op[0] ? $div : $prod):($op[0] ? $diff : $sum);
+
+ ```
+
+![Screenshot (22)](https://github.com/dillibabuporlapothula/RISCV/assets/141803312/b65a384d-9371-4b8d-a65d-e25d83c3a423)
+
+  
+  
 </details>
 
 <details>
